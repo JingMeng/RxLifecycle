@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -15,7 +15,7 @@
 package com.trello.rxlifecycle2.navi;
 
 import android.support.annotation.CheckResult;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import com.trello.navi2.NaviComponent;
 import com.trello.rxlifecycle2.LifecycleProvider;
 import com.trello.rxlifecycle2.android.ActivityEvent;
@@ -43,3 +43,4 @@ public final class NaviLifecycle {
         throw new AssertionError("No instances!");
     }
 }
+

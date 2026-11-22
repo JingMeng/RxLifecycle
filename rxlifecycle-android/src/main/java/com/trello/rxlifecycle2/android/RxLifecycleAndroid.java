@@ -14,8 +14,8 @@
 
 package com.trello.rxlifecycle2.android;
 
-import android.support.annotation.CheckResult;
-import android.support.annotation.NonNull;
+import androidx.annotation.CheckResult;
+import androidx.annotation.NonNull;
 import android.view.View;
 import com.trello.rxlifecycle2.LifecycleTransformer;
 import com.trello.rxlifecycle2.OutsideLifecycleException;
@@ -149,3 +149,4 @@ public class RxLifecycleAndroid {
         };
 
 }
+

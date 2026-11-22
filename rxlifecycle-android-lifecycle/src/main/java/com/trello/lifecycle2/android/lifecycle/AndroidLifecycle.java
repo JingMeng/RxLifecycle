@@ -1,11 +1,11 @@
-package com.trello.lifecycle2.android.lifecycle;
+﻿package com.trello.lifecycle2.android.lifecycle;
 
 import android.arch.lifecycle.Lifecycle;
 import android.arch.lifecycle.LifecycleObserver;
 import android.arch.lifecycle.LifecycleOwner;
 import android.arch.lifecycle.OnLifecycleEvent;
 import android.support.annotation.CheckResult;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import com.trello.rxlifecycle2.LifecycleProvider;
 import com.trello.rxlifecycle2.LifecycleTransformer;
 import com.trello.rxlifecycle2.RxLifecycle;
@@ -65,3 +65,4 @@ public final class AndroidLifecycle implements LifecycleProvider<Lifecycle.Event
         }
     }
 }
+

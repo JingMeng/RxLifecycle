@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -14,8 +14,8 @@
 
 package com.trello.rxlifecycle2.components.support;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import com.trello.rxlifecycle2.LifecycleProvider;
 import com.trello.rxlifecycle2.android.FragmentEvent;
 import io.reactivex.Observable;
@@ -199,3 +199,4 @@ public class RxSupportFragmentLifecycleTest {
     public static class TestRxDialogFragment extends RxDialogFragment {
     }
 }
+

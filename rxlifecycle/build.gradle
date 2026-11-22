@@ -8,20 +8,20 @@ repositories {
 }
 
 dependencies {
-    compile rootProject.ext.rxJava
+    implementation rootProject.ext.rxJava
     compileOnly rootProject.ext.jsr305Annotations
 
-    testCompile rootProject.ext.junit
+    testImplementation rootProject.ext.junit
 }
 
 // Add sources/javadoc artifacts
 task sourcesJar(type: Jar, dependsOn:classes) {
-    classifier = 'sources'
+    archiveClassifier = 'sources'
     from sourceSets.main.allSource
 }
 
 task javadocJar(type: Jar, dependsOn:javadoc) {
-    classifier = 'javadoc'
+    archiveClassifier = 'javadoc'
     from javadoc.destinationDir
 }
 
@@ -30,4 +30,4 @@ artifacts {
     archives javadocJar
 }
 
-apply from: "$rootDir/gradle/gradle-mvn-push.gradle"
+

@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'kotlin-android'
 
 android {
+    namespace 'com.trello.rxlifecycle2.kotlin'
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
@@ -17,9 +17,7 @@ repositories {
 }
 
 dependencies {
-    compile kotlinStdlib
-    compile project(':rxlifecycle-android')
+    implementation kotlinStdlib
+    implementation project(':rxlifecycle-android')
 }
 
-apply from: "$rootDir/gradle/artifacts.gradle"
-apply from: "$rootDir/gradle/gradle-mvn-push.gradle"

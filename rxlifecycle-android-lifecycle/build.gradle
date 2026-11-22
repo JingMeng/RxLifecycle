@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
 
 android {
+    namespace 'com.trello.rxlifecycle2.android.lifecycle'
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
@@ -16,18 +16,17 @@ repositories {
 }
 
 dependencies {
-    compile project(':rxlifecycle')
+    implementation project(':rxlifecycle')
 
-    compile rootProject.ext.rxAndroid
-    compile rootProject.ext.supportAnnotations
-    compile rootProject.ext.lifecycle
+    implementation rootProject.ext.rxAndroid
+    implementation rootProject.ext.supportAnnotations
+    implementation rootProject.ext.lifecycle
     annotationProcessor rootProject.ext.lifecycleProcessor
 
-    testCompile rootProject.ext.junit
-    testCompile rootProject.ext.robolectric
-    testCompile rootProject.ext.lifecycleExtensions
+    testImplementation rootProject.ext.junit
+    testImplementation rootProject.ext.robolectric
+    testImplementation rootProject.ext.lifecycleExtensions
 }
 
-apply from: "$rootDir/gradle/artifacts.gradle"
-apply from: "$rootDir/gradle/gradle-mvn-push.gradle"
+
 

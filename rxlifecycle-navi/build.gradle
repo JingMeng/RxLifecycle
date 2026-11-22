@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
 
 android {
+    namespace 'com.trello.rxlifecycle2.navi'
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
@@ -16,12 +16,10 @@ repositories {
 }
 
 dependencies {
-    compile project(':rxlifecycle-android')
+    implementation project(':rxlifecycle-android')
 
-    compile rootProject.ext.navi
+    implementation rootProject.ext.navi
 
-    testCompile rootProject.ext.junit
+    testImplementation rootProject.ext.junit
 }
 
-apply from: "$rootDir/gradle/artifacts.gradle"
-apply from: "$rootDir/gradle/gradle-mvn-push.gradle"
